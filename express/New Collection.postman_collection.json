@@ -1,0 +1,34 @@
+{
+	"info": {
+		"_postman_id": "9b5a16c5-dc61-4f03-afd7-0e9e85ef5e58",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41645752"
+	},
+	"item": [
+		{
+			"name": "a",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "b",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "c",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
