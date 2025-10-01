@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import Navbar from './components/Navbar';
 import UserForm from './components/UserForm';
 import UserTable from './components/UserTable';
 import './App.css';
@@ -31,10 +32,15 @@ function App() {
 
     return (
         <div className="App">
+            <Navbar />
             <h1>Felhasználókezelő (Full-Stack CRUD)</h1>
-            <UserForm onUserAdded={fetchData} />
+            <div id="add-user">
+                <UserForm onUserAdded={fetchData} />
+            </div>
             <hr />
-            <UserTable users={users} onRefresh={fetchData} />
+            <div id="list-users">
+                <UserTable users={users} onRefresh={fetchData} />
+            </div>
         </div>
     );
 }

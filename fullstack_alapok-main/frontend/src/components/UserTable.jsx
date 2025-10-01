@@ -1,17 +1,17 @@
 import React from 'react';
 import UserRow from './UserRow';
-import { tableHeaderStyle, tableCellStyle, noUsersCellStyle } from './styles';
+import './styles.css';
 
 function UserTable({ users, onRefresh }) {
     return (
         <table style={{ width: '100%', borderCollapse: 'collapse' }}>
             <thead>
                 <tr>
-                    <th style={tableHeaderStyle}>#ID</th>
-                    <th style={tableHeaderStyle}>Név</th>
-                    <th style={tableHeaderStyle}>Email</th>
-                    <th style={tableHeaderStyle}>Regisztráció</th>
-                    <th style={tableHeaderStyle}>Műveletek</th>
+                    <th className="table-header">#ID</th>
+                    <th className="table-header">Név</th>
+                    <th className="table-header">Email</th>
+                    <th className="table-header">Regisztráció</th>
+                    <th className="table-header">Műveletek</th>
                 </tr>
             </thead>
             <tbody>
@@ -21,7 +21,7 @@ function UserTable({ users, onRefresh }) {
                     ))
                 ) : (
                     <tr>
-                        <td colSpan="5" style={noUsersCellStyle}>Nincsenek felhasználók.</td>
+                        <td colSpan="5" className="no-users-cell">Nincsenek felhasználók.</td>
                     </tr>
                 )}
             </tbody>

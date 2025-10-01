@@ -1,0 +1,27 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    /* tableHeaderStyle */
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 10px;
+    text-align: left;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    /* tableCellStyle */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.no-users {
+    /* noUsersCellStyle */
+    text-align: center;
+    color: #888;
+    padding: 20px;
+    font-style: italic;
+}
